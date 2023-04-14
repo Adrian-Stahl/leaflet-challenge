@@ -7,7 +7,12 @@ let labase = {
     "Mapa Mundis": calle
 };
 let decubierta ={
-    "Earthquake details": earthquakes 
+    "Earthquake details": terremoto 
 };
+let mapa = L.map("mapa", {
+    center: [40.7, -94.5],
+    zoom: 5,
+    layers:[calle, terremoto]
+});
 
 }
